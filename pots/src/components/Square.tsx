@@ -1,8 +1,6 @@
-interface squareProps {
-    value: number | null;
-}
+import { squareProps } from "../constants/constants";
 
-const Square: React.FC<squareProps> = ({value}) => {
+const Square: React.FC<squareProps> = ({ value }) => {
     const imageName = value !== null ? `image${value}.jpg` : null;
     const squareStyle = {
         backgroundImage: imageName ? `url(/images/${imageName})` : 'none',

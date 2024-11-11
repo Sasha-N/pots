@@ -1,6 +1,11 @@
 import Square from './Square';
+import { GameState } from '../constants/constants'
 
-const state = [1, 2, 3, 4, 5, 6, 7, 8, null];
+const initialState: GameState =
+{
+    items: [1, 2, 4, 3, 5, 6, 7, 8, null],
+    completed: false,
+}
 
 const Board = () => {
     const boardStyle = {
@@ -10,7 +15,7 @@ const Board = () => {
     }
     return (
         <div style={boardStyle}>
-            {state.map((square) =>
+            {initialState.items.map((square) =>
                 <Square value={square} />
             )}
         </div>
