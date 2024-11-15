@@ -1,6 +1,6 @@
 import { squareProps } from "../constants/constants";
 
-const Square: React.FC<squareProps> = ({ value }) => {
+const Square: React.FC<squareProps> = ({ value, onClick }) => {
     const imageName = value !== null ? `image${value}.jpg` : null;
     const squareStyle = {
         backgroundImage: imageName ? `url(/images/${imageName})` : 'none',
@@ -14,7 +14,7 @@ const Square: React.FC<squareProps> = ({ value }) => {
         border: '1px solid black',
     }
     return (
-        <div style={squareStyle}>
+        <div style={squareStyle} onClick={onClick}>
             {value !== null ? value : ''}
         </div>
     );
