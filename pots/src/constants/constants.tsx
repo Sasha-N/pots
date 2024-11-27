@@ -5,6 +5,10 @@ export interface squareProps {
     onClick: () => void;
 }
 
+export interface buttonProps {
+    onClick: () => void;
+}
+
 type ActionsType = ('MOVE' | 'SHUFFLE');
 
 export interface GameActions {
