@@ -1,0 +1,20 @@
+.button-container {
+    position: relative;
+    left: -295px;
+    top: 60px;
+}
+
+button {
+    width: 180px;
+    height: 180px;
+    border-radius: 100px;
+    background-color: #202320;
+    border: 5px solid #000000;
+    box-shadow: 15px 10px 5px #0b0c0b;
+    color: #ffffff;
+    font-size: 36px;
+}
+
+button:active {
+    box-shadow: 10px 5px 5px #0b0c0b;
+}
