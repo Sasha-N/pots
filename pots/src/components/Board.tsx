@@ -3,10 +3,11 @@ import { GameState } from '../constants/constants';
 import { useReducer } from 'react';
 import GameReducer from '../reducers/reducer';
 import Button from './Button';
+import { generateItems } from '../utils/utils';
 
 const initialState: GameState =
 {
-    items: [1, 2, 4, 3, 6, 5, 7, 8, null],
+    items: generateItems(),
     completed: false,
 }
 

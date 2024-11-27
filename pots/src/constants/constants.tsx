@@ -16,8 +16,9 @@ export interface GameActions {
     payload?: number;
 }
 
+export type Items = (number | null)[];
 export interface GameState {
-    items: (number | null)[];
+    items: Items;
     completed: boolean;
     action?: GameActions;
 }
